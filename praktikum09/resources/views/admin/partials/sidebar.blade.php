@@ -53,7 +53,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="pasien/index.php" class="nav-link">
+                            <a href="{{ route('pasiens.index') }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Table Pasien</p>
                             </a>
@@ -71,7 +71,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="kelurahan/index.php" class="nav-link">
+                            <a href="{{ route('kelurahans.index') }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Kelurahan</p>
                             </a>

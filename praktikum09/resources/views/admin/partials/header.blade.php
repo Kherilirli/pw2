@@ -6,13 +6,13 @@
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="index.php" class="nav-link">Home</a>
+                    <a href="{{ route('home.index') }}" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="users" class="nav-link">Users</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="pasien" class="nav-link">Pasien</a>
+                    <a href="{{ route('pasiens.index') }}" class="nav-link">Pasien</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="dokter" class="nav-link">Dokter</a>
@@ -21,7 +21,7 @@
                     <a href="periksa" class="nav-link">Periksa</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="kelurahan" class="nav-link">Kelurahan</a>
+                    <a href="{{ route('pasiens.index') }}" class="nav-link">Kelurahan</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="unit_kerja" class="nav-link">Unit Kerja</a>
