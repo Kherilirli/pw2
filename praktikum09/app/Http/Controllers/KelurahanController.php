@@ -39,7 +39,7 @@ class KelurahanController extends Controller
         // kirim data ke database
         Kelurahan::create([
             'nama' => $request->nama,
-            'kecamatan_id' => $request->kecamatan_id,
+            'kecamatan_id' => $request->kecamatan_id
         ]);
         // redirect ke index
         return redirect()->route('kelurahans.index')->with('success', 'Kelurahan created successfully.');

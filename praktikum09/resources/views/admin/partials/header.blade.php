@@ -21,7 +21,7 @@
                     <a href="periksa" class="nav-link">Periksa</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="{{ route('pasiens.index') }}" class="nav-link">Kelurahan</a>
+                    <a href="{{ route('kelurahans.index') }}" class="nav-link">Kelurahan</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="unit_kerja" class="nav-link">Unit Kerja</a>

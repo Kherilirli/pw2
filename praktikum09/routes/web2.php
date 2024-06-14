@@ -1,9 +1,8 @@
 <?php
 
 use App\Http\Controllers\AdminController;
-use App\Http\Controllers\PasienController;
 use App\Http\Controllers\KelurahanController;
-use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\PasienController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -16,10 +15,6 @@ Route::get('/kabar', function () {
 
 Route::get('/nilai', function () {
     return view('nilai');
-});
-
-Route::get('/page', function () {
-    return view('page');
 });
 
 Route::get('/admin',[AdminController::class,'index'])->name('home.index');
@@ -40,15 +35,3 @@ Route::get('/admin/kelurahan/{kelurahan}', [KelurahanController::class, 'show'])
 Route::get('/admin/kelurahan/{kelurahan}/edit', [KelurahanController::class, 'edit'])->name('kelurahans.edit');
 Route::put('/admin/kelurahan/{kelurahan}', [KelurahanController::class, 'update'])->name('kelurahans.update');
 Route::delete('/admin/kelurahan/{kelurahan}', [KelurahanController::class, 'destroy'])->name('kelurahans.destroy');
-
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
-
-Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-});
-
-require __DIR__.'/auth.php';

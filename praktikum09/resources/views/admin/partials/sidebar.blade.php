@@ -15,7 +15,7 @@
             </div>
             <div class="info">
                 <a href="#" class="d-block">
-                    Kheril Irli Januar
+                    {{ auth()->user()->name }}
                 </a>
             </div>
         </div>
